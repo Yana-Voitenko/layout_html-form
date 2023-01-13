@@ -1,5 +1,17 @@
 /* styles go here */
+html {
+  display: block;
+  margin: 20px;
+}
 .form-field {
   display: block;
-  padding: 5px;
+  margin: 10px;
+}
+fieldset {
+  display: block;
+  margin: 20px;
+}
+body {
+  display: block;
+  margin: 20px;
 }

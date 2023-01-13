@@ -28,14 +28,19 @@
       <input type="text" name="name">
       </label>
       
-      <label class="form-field">
+      <label for="tentacles" class="form-field">
         How old are You?
-      <input type="text" name="How old are You?" value="12">
+      <input type="number"
+       id="tentacles"
+       name="number"
+       min="1"
+       max="100"
+       value="12">
       </label>
       
       <label class="form-field">
         Full date of birth:
-      <input type="text" name="Full date of birth" placeholder="mm / dd / yyyy">
+      <input type="date" name="Full date of birth" placeholder="mm / dd / yyyy">
       </label>
       
       <label class="form-field">
@@ -52,7 +57,7 @@
         
         <label class="form-field" >
           Password:
-          <input type="text" name="Password">
+          <input type="password" name="Password" required minlength="5" maxlength="32">
         </label>
       </fieldset>
       <fieldset>
@@ -75,11 +80,15 @@
         </label>
         <label class="form-field">
           What time do you go to bed?
-          <input type="text" name="bed">
+          <input type="time" name="bed">
         </label>
         <label class="form-field">
           What are your favorite brand of cars?
-          <input type="text" name="cars">
+         <select name="car" required multiple>
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+         </select>
         </label>
         <label class="form-field">
           How do you rate our work?
@@ -94,10 +103,13 @@
         </label>
         <label class="form-field">
           Would you recommend us?
-          <input type="number" name="recommend">
+          <select name="recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
         </label>
       </fieldset>
-    <button>Submit</button>
+    <button type="submit">Submit</button>
   </form>
   </body>
 </html>
